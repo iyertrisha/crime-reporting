@@ -1,0 +1,162 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1a1a1a; 
+}
+
+.container {
+  padding: 40px;
+  border-radius: 20px;
+  border: 8px solid #1a1a1a; 
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container .form.signin,
+.container.signinForm .form.signup {
+  display: none;
+}
+
+.container.signinForm .form.signin {
+  display: flex;
+}
+
+.container .form h2 {
+  color: #fff;
+  font-weight: 700; 
+  letter-spacing: 0.2em; 
+}
+
+.container .form .inputBox {
+  position: relative;
+  width: 300px;
+}
+
+.container .form .inputBox input {
+  padding: 15px 10px 15px 58px; 
+  border: none;
+  width: 100%;
+  background: #333; 
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 400;
+  border-radius: 30px; 
+  font-size: 1.2em; 
+  box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.1),
+    8px 8px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  outline: none;
+}
+
+.container .form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 15px 10px 15px 58px; 
+  pointer-events: none;
+  font-size: 1.2em; 
+  transition: 0.5s;
+  letter-spacing: 0.1em; 
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+.container .form .inputBox i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px; 
+  width: 30px; 
+  color: #ffcc00; 
+}
+
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span {
+  color: #ffcc00;
+  border: 2px solid #ffcc00; 
+  background: #333;
+  transform: translateX(30px) translateY(-7px);
+  font-size: 1em; 
+  padding: 0 10px;
+  border-radius: 20px; 
+  letter-spacing: 0.15em; 
+}
+
+.container .form .inputBox input:valid,
+.container .form .inputBox input:focus {
+  border: 2px solid #ffcc00; 
+}
+
+.container .form .inputBox input[type="submit"] {
+  background: #ffcc00;
+  color: #1a1a1a; 
+  padding: 15px 0; 
+  font-weight: 700; 
+  cursor: pointer;
+  box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.1),
+    8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.container .form p {
+  color: rgba(255, 255, 255, 0.7); 
+  font-size: 0.9em; 
+  font-weight: 400; 
+}
+
+.container .form p a {
+  font-weight: 600; 
+  color: #fff;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#success-modal {
+  background-color: #fff;
+  padding: 30px; 
+  border-radius: 10px; 
+  text-align: center;
+  position: relative;
+}
+
+#success-icon {
+  color: #00cc99; 
+  font-size: 60px; 
+  margin-bottom: 20px;
+}
+
+#success-message {
+  color: #00cc99; 
+  font-weight: bold;
+  font-size: 24px; 
+  margin-bottom: 20px;
+}

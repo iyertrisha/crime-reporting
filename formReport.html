@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Police Incident Report</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2C3345;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #2C3345;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #4CAF50;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #2C3345;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      display: block;
+      margin: auto;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"> <img src="images/download.png" alt="Logo"> </a>
+      <nav> <h1> <a href="index.html">CRIME JUSTICE</a></h1></nav>
+    </div>
+    <nav>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Signup</a>
+    </nav>
+  </header>
+  <div class="form-container">
+    <h1>Police Incident Report</h1>
+    <p>To report an incident, please provide the following information:</p>
+    <form action="submit_police_report.php" method="post">
+      <label for="reportDateTime">Report Date and Time:</label>
+      <input type="datetime-local" id="reportDateTime" name="reportDateTime" required>
+
+      <label for="incidentDateTime">Date and Time When the Incident Occurred:</label>
+      <input type="datetime-local" id="incidentDateTime" name="incidentDateTime" required>
+
+      <label for="reportIssuer">Incident Report Issued By:</label>
+      <input type="text" id="reportIssuer" name="reportIssuer" required>
+
+      <label for="incidentLocation">Incident Location (Please provide specific details):</label>
+      <input type="text" id="incidentLocation" name="incidentLocation" required>
+
+      <label for="natureOfIncident">Nature of Incident:</label>
+      <select id="natureOfIncident" name="natureOfIncident" required>
+        <option value="theft">Theft</option>
+        <option value="assault">Assault</option>
+        <option value="vandalism">Vandalism</option>
+      </select>
+
+      <label for="incidentDetails">Incident Details:</label>
+      <textarea id="incidentDetails" name="incidentDetails" rows="4" required></textarea>
+
+      <label for="motivation">What Motivated the Incident?</label>
+      <input type="text" id="motivation" name="motivation" required>
+
+      <label for="reportIssued">Was a Report of the Incident Issued to the Police?</label>
+      <select id="reportIssued" name="reportIssued" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="arrested">Has Anyone Been Arrested So Far in Relation to the Incident?</label>
+      <select id="arrested" name="arrested" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <div class="checkbox-label">
+        <label for="contactPolice">Do You Want the Police to Get in Touch With You?</label>
+        <input type="checkbox" id="contactPolice" name="contactPolice">
+      </div>
+
+      <label for="comments">Further Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <button >Submit Report Now</button></a>
+     
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+
+    .contact-info,
+    .contact-form {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .contact-info {
+      width: 40%;
+      padding: 20px;
+    }
+
+    .contact-form {
+      width: 50%;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .space-navigation{
+        margin-top: 50px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html"> <img  src="images/download.png" alt="Logo"> </a>
+          <nav> <h1> <a href="index.html">CRIME JUSTICE</a></h1></nav>
+        </div>
+        <nav>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Signup</a>
+        </nav>
+      </header>
+
+   <div class="space-navigation">
+  <div class="contact-info">
+    <h2>Have Any Questions?</h2>
+    <p>Please feel free to call or email us, or use our contact form to get in touch with us. We look forward to hearing from you!</p>
+
+    <h3>Emergency? Call Us:</h3>
+    <p>For immediate assistance, call: <strong>+1 123-456-7890</strong></p>
+
+    <h3>Send Us Mail:</h3>
+    <p>Email: <strong>info@example.com</strong></p>
+    <h3>Find Us</h3>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0171591566204!2d77.56442807496936!3d13.034579187286612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17e0b0a41551%3A0xecd17a996841dfc8!2sM.S.%20Ramaiah%20Institute%20of%20Technology%20Ground!5e0!3m2!1sen!2sin!4v1702675881133!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+  </div>
+
+  <div class="contact-form">
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
+
