@@ -1,6 +1,6 @@
-# 🚨 Crime Justice Done 🚔
+# 🚨 Crime Justice 🚔
 
-Welcome to **Crime Justice Done**, a web platform designed to empower citizens to report crimes, seek justice, and create safer communities. Built with ❤️ using **HTML** and **CSS**.
+Welcome to **Crime Justice**, a web platform designed to empower citizens to report crimes, seek justice, and create safer communities. Built with ❤️ using **HTML** and **CSS**.
 
 ---
 
